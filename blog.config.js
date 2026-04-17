@@ -70,5 +70,13 @@ const BLOG = {
   // uuid重定向至 slug
   UUID_REDIRECT: process.env.UUID_REDIRECT || false
 }
-
+// blog.config.js 中的 COMMENT 配置部分
+COMMENT: {
+  utterances: {
+    enable: true, // 必须设为 true
+    repo: "xyx5916/Utterances", // 重点修改这一行！
+    issueTerm: "pathname", // 或 "title"
+    theme: "github-light"
+  }
+}
 module.exports = BLOG
