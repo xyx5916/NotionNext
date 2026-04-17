@@ -99,3 +99,10 @@ module.exports = {
     process.env.NEXT_PUBLIC_TWITTER_USERNAME || '',
   COMMENT_WEBMENTION_TOKEN: process.env.NEXT_PUBLIC_WEBMENTION_TOKEN || ''
 }
+<script src="https://utteranc.es/client.js"
+        repo="xyx5916/Utterances"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
