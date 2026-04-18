@@ -369,7 +369,7 @@ export {
 const audio = new Audio();
 
 // 你的 MP3 直链（这里替换成你自己的）
-audio.src = "https://你的MP3直链.mp3";
+audio.src = "https://raw.githubusercontent.com/xyx5916/audio-host/main/66765c5cdacc48af682833601b8eaaa9(1) - 副本.mp3";
 
 // 自动循环
 audio.loop = true;
