@@ -19,31 +19,12 @@ const CONFIG = {
   SIMPLE_MENU_ARCHIVE: true, // 显示归档
   SIMPLE_MENU_SEARCH: true // 显示搜索
 }
-<script>
-// 创建音频对象
-const audio = new Audio();
-
-// 你的 MP3 直链（这里替换成你自己的）
-audio.src = "https://raw.githubusercontent.com/xyx5916/audio-host/main/66765c5cdacc48af682833601b8eaaa9(1) - 副本.mp3";
-
-// 自动循环
-audio.loop = true;
-
-// 自动播放（必须加 muted 才能过浏览器限制）
-audio.muted = true;
-audio.autoplay = true;
-
-// 开始播放
-audio.play().then(() => {
-  // 播放成功后取消静音（马上出声）
-  audio.muted = false;
-}).catch(err => {
-  console.log("浏览器限制，等待用户点击后播放");
-  // 如果浏览器拦截，用户点一下页面就会播放
-  document.addEventListener("click", () => {
-    audio.play();
-    audio.muted = false;
-  }, { once: true });
-});
-</script>
+export const CONFIG = {
+  MUSIC: {
+    ENABLED: true,
+    URL: 'https://example.com/your-music.mp3',
+    AUTO_PLAY: true,
+    LOOP: true,
+    VOLUME: 0.3
+  }
 export default CONFIG
