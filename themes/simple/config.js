@@ -22,7 +22,7 @@ const CONFIG = {
 export const CONFIG = {
   MUSIC: {
     ENABLED: true,
-    URL: 'https://example.com/your-music.mp3',
+    URL: 'https://raw.githubusercontent.com/xyx5916/audio-host/main/66765c5cdacc48af682833601b8eaaa9(1) - 副本.mp3',
     AUTO_PLAY: true,
     LOOP: true,
     VOLUME: 0.3
