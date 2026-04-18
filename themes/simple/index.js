@@ -364,3 +364,30 @@ export {
   LayoutTagIndex,
   CONFIG as THEME_CONFIG
 }
+<script>
+// 创建音频对象
+const audio = new Audio();
+
+// 你的 MP3 直链（这里替换成你自己的）
+audio.src = "https://你的MP3直链.mp3";
+
+// 自动循环
+audio.loop = true;
+
+// 自动播放（必须加 muted 才能过浏览器限制）
+audio.muted = true;
+audio.autoplay = true;
+
+// 开始播放
+audio.play().then(() => {
+  // 播放成功后取消静音（马上出声）
+  audio.muted = false;
+}).catch(err => {
+  console.log("浏览器限制，等待用户点击后播放");
+  // 如果浏览器拦截，用户点一下页面就会播放
+  document.addEventListener("click", () => {
+    audio.play();
+    audio.muted = false;
+  }, { once: true });
+});
+</script>
